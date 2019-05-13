@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li{
+	float:left;
+	border-right: 1px solid #bbb;
+}
+
+li:last-child {
+	border-right: none;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 20px;
+	text-decoration: none;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.5vw;
+}
+
+li a:hover:not(.active){
+	background-color: #111;
+}
+
+.active {
+	background-color: #4CAF50;
+}
+
+.center{
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.img-container{
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+</style>
+</head>
+<body>
+
+	<ul>
+		<li><a href="index.html">Call 1</a></li>
+		<li><a href="call2.html">Call 2</a></li>
+		<li><a href="call3.html">Call 3</a></li>
+		<li><a href="call4.html">Call 4</a></li>
+		<li><a href="call5.html">Call 5</a></li>
+		<li><a class="active" href="call6.html">Call 6</a></li>
+		<li><a href="call7.html">Call 7</a></li>
+	</ul>
+	
+	<div class="center">
+	<h1 style="font-size:5vw; font-family: Helvetica">CORRECT!</h1>
+	<img src="images/lion.jpeg" alt="Lion" style="width:30%">
+	<p style="font-size: 2vw; font-family: Helvetica"><i>Panthera leo</i></p>
+	<p style="font-size:2vw; font-family: Helvetica">Both male and female lions use <b>roars</b> to advertise their territory and stay in contact with the pride.</p>
+	<a href="call7.html" style="font-size:1vw; 
+	font-family: Helvetica; 
+	background-color: #4CAF50;
+  	color: white;
+  	padding: 15px 25px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;";>NEXT</a>
+
+</body>
+</html>
